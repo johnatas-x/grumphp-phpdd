@@ -37,10 +37,10 @@ final class Phpdd extends AbstractExternalTask
     ]);
 
     $resolver->addAllowedTypes('files', ['array']);
-    $resolver->addAllowedTypes('target', ['string']);
-    $resolver->addAllowedTypes('after', ['string']);
+    $resolver->addAllowedTypes('target', ['string', 'null']);
+    $resolver->addAllowedTypes('after', ['string', 'null']);
     $resolver->addAllowedTypes('exclude', ['array']);
-    $resolver->addAllowedTypes('max_size', ['string']);
+    $resolver->addAllowedTypes('max_size', ['string', 'null']);
     $resolver->addAllowedTypes('file_extensions', ['array']);
     $resolver->addAllowedTypes('skip_checks', ['array']);
 
@@ -72,7 +72,7 @@ final class Phpdd extends AbstractExternalTask
     $arguments = $this->processBuilder->createArgumentsForCommand('phpdd');
     $arguments->addFiles($files);
     $arguments->add('--no-interaction');
-    $arguments->addOptionalArgument('--file-extensions=%s', $extensions);
+    $arguments->addOptionalCommaSeparatedArgument('--file-extensions=%s', $extensions);
     $arguments->addOptionalCommaSeparatedArgument('--exclude=%s', $config['exclude']);
 
     $string_opt_args = ['target', 'after', 'max_size'];
