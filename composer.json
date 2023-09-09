@@ -1,0 +1,29 @@
+{
+  "name": "johnatas-x/grumphp-phpdd",
+  "description": "Execute phpdd in a grumphp task.",
+  "type": "library",
+  "homepage": "https://github.com/johnatas-x/grumphp-phpdd",
+  "license": "proprietary",
+  "require": {
+    "phpro/grumphp": "^2.0",
+    "wapmorgan/php-deprecation-detector": "dev-master"
+  },
+  "authors": [
+    {
+      "name": "Johnatas",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/johnatas-x/grumphp-phpdd/issues",
+    "source": "https://github.com/johnatas-x/grumphp-phpdd"
+  },
+  "autoload": {
+    "psr-4": {"GrumphpPhpdd\\": "src/"}
+  },
+  "config": {
+    "allow-plugins": {
+      "phpro/grumphp": true
+    }
+  }
+}

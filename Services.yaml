@@ -1,0 +1,8 @@
+services:
+  GrumphpPhpdd\Phpdd:
+    class: GrumphpPhpdd\Phpdd
+    arguments:
+      - '@process_builder'
+      - '@formatter.raw_process'
+    tags:
+      - {name: grumphp.task, task: phpdd}
