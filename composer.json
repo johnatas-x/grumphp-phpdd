@@ -5,7 +5,7 @@
   "homepage": "https://github.com/johnatas-x/grumphp-phpdd",
   "license": "proprietary",
   "require": {
-    "phpro/grumphp": "^2.5",
+    "phpro/grumphp": "^2.6.0",
     "wapmorgan/php-deprecation-detector": "dev-master"
   },
   "authors": [
