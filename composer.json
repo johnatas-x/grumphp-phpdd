@@ -6,7 +6,7 @@
   "license": "proprietary",
   "require": {
     "phpro/grumphp": "^2.9.0",
-    "wapmorgan/php-deprecation-detector": "dev-master"
+    "johnatas-x/php-deprecation-detector": "^1.1.0"
   },
   "authors": [
     {
