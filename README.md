@@ -1,6 +1,6 @@
 # Description
 
-This repository adds a task for GrumPHP that launchs [PhpDeprecationDetector](https://github.com/wapmorgan/PhpDeprecationDetector).
+This repository adds a task for GrumPHP that launches [PhpDeprecationDetector](https://github.com/wapmorgan/PhpDeprecationDetector).
 During a commit check for deprecated functionality. If a deprecated functionality is detected, it won't pass.
 
 
