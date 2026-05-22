@@ -3,7 +3,6 @@
   "description": "Execute phpdd in a grumphp task.",
   "type": "library",
   "homepage": "https://github.com/johnatas-x/grumphp-phpdd",
-  "license": "proprietary",
   "require": {
     "phpro/grumphp": "2.21.0",
     "johnatas-x/php-deprecation-detector": "1.3.0"
